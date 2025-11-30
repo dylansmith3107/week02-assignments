@@ -11,6 +11,24 @@ const imageData = [
     imageAlt:
       "A white flamingo drinking from a large body of water, its form being reflected in the rippling water. Photo taken by Philippe BONTEMPS, taken from unsplash.com",
   },
+  {
+    imageName: "mushrooms",
+    imageSrc: "./images/mushrooms-medium.jpg",
+    imageAlt:
+      "Two white mushrooms sprouting from the dirt in the daylight. Photo taken by Marco Grosso, taken from unsplash.com",
+  },
+  {
+    imageName: "sparrow",
+    imageSrc: "./images/sparrow-medium.jpg",
+    imageAlt:
+      "A sparrow sitting atop a reed in the winter. Photo taken by Tao Yuan, taken from unsplash.com",
+  },
+  {
+    imageName: "kangaroo",
+    imageSrc: "./images/kangaroo-medium.jpg",
+    imageAlt:
+      "A kangaroo looking at the camera in an Australian field during the day. Photo taken by Brian McMahon', taken from unsplash.com",
+  },
 ];
 
 function createDefaultDisplay() {
