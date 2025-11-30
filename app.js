@@ -13,6 +13,15 @@ const imageData = [
   },
 ];
 
+function createDefaultDisplay() {
+  const display = document.getElementById("display");
+  const fullImage = document.createElement("img");
+  fullImage.src = imageData[0].imageSrc;
+  fullImage.alt = imageData[0].imageAlt;
+  fullImage.className = imageData[0].imageName;
+  display.appendChild(fullImage);
+}
+
 function createThumbnail() {
   const thumbnailContainer = document.getElementById("thumbnail-container");
   for (let i = 0; i < imageData.length; i++) {
@@ -33,10 +42,27 @@ function createFullImage(iValue) {
   const fullImage = document.createElement("img");
   fullImage.src = imageData[iValue].imageSrc;
   fullImage.alt = imageData[iValue].imageAlt;
-  fullImage.className = "full-image";
+  fullImage.className = imageData[iValue].imageName;
   display.appendChild(fullImage);
 }
 
 createThumbnail();
+createDefaultDisplay();
 
-const thumbnailContainerButton = document.getElementById;
+const thumbnailContainerButton = document.getElementById(
+  "thumbnailContainerButton"
+);
+
+//function showHideThumbnails() {
+//const thumbnailContainer = document.getElementById("thumbnailContainer");
+//let display = 0;
+//if (display == 1) {
+//thumbnailContainer.style.display = "flex";
+//display = 0;
+//} else {
+//thumbnailContainer.style.display = "none";
+//thumbnailContainer.style.padding = "0px";
+//display = 1;
+//}
+//}
+//Tried to have a show/hide button, but could not get button to work, always had an error
